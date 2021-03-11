@@ -1,0 +1,1 @@
+Store chrome location using '/' instead of '\' 
