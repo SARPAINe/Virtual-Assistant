@@ -5,6 +5,7 @@ from threading import *
 import time
 from gtts import gTTS 
 import re
+import os 
 import pyttsx3
 import speech_recognition as sr
 import datetime
@@ -181,11 +182,6 @@ def play():
               speak('no contact named '+query+' is found!')
 
         
-        
-        
-
-import os 
-
 
 # create tkinter window 
 root = Tk() 
