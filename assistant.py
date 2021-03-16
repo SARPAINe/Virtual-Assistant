@@ -83,8 +83,7 @@ def sendEmail(to,content):
     server.ehlo()
     server.starttls()
     fh=open('password.txt')
-        password=fh.read()
-    password=
+    password=fh.read()
     server.login('kazishaharin@gmail.com',password)
     server.sendmail('kazishaharin@gmail.com',to,content)
     server.close()
