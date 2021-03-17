@@ -84,8 +84,13 @@ def sendEmail(to,content):
     server.starttls()
     fh=open('password.txt')
     password=fh.read()
-    server.login('kazishaharin@gmail.com',password)
-    server.sendmail('kazishaharin@gmail.com',to,content)
+    fh.close()
+    fh=open('email.txt')
+    email=fh.read()
+    fh.close()
+    
+    server.login(email,password)
+    server.sendmail(email,to,content)
     server.close()
 
 def play(): 
